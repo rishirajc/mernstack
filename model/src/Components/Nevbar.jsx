@@ -6,7 +6,7 @@ import {styled} from   "styled-components"
 
 const Title=styled.h3`
   font-size: 19px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: initial;
     color: #000000;
     cursor: pointer;
 `
@@ -17,6 +17,7 @@ const Nav=styled.div`
   align-items: center;
   justify-content: space-around;
   background-color: rebeccapurple;
+
 `
 
 
@@ -29,11 +30,14 @@ const Nevbar = () => {
     }
   return (
 <Nav>
+  
 
-<Link to={'/profile3'}><Title>profile </Title></Link> 
-<Title>cart </Title>
-<Title>about </Title>
-<Title onClick={display}>logout </Title>
+<Link to={'/profile3'}><Title>Profile <span class="material-symbols-outlined">
+person
+</span></Title></Link> 
+<Title>Cart  </Title>
+<Title>About </Title>
+<Title onClick={display}>Logout </Title>
     </Nav>
 
   )

@@ -15,6 +15,62 @@ const PIC=styled.div`
   margin-left: 550px;
   margin-top: 200px;
 `
+const PIC2=styled.img`
+margin-top: 509px;
+`
+
+const CLR=styled.div`
+  background-color: cadetblue;
+  min-height: 145vh;
+  margin-top: -200px;
+`
+const MAIN=styled.div`
+  min-height: 145vh;
+`
+const NAME=styled.div`
+flex-direction: column;
+margin-left: 474px;
+  
+`
+const EMAIL=styled.div`
+  flex-direction: column;
+  margin-left: 474px;
+  margin-top: 13px;
+
+`
+const PSWD=styled.div`
+  flex-direction: column;
+  margin-left: 474px;
+  margin-top: 13px;
+`
+const AGE=styled.div`
+  flex-direction: column;
+  margin-left: 474px;
+  margin-top: 13px;
+`
+const MOBILE=styled.div`
+  flex-direction: column;
+  margin-left: 474px;
+  margin-top: 13px;
+`
+const PINCODE=styled.div`
+  flex-direction: column;
+  margin-left: 474px;
+  margin-top: 13px;
+`
+const SIGN=styled.div`
+  margin-left: 533px;
+  margin-top: 13px;
+  width: 10px;
+  
+`
+const UPDT=styled.div`
+  margin-left: 519px;
+  margin-top: 13px;
+  
+`
+  
+
 
 const Signuppage = () => {
   const[name,setname]=useState(String)
@@ -31,22 +87,58 @@ const Signuppage = () => {
 
   }
   return (
-    <div>
-    <PIC><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7l0ql6GGGCSffB_IxNBIHj7jDqUM1e0YDoQ&s" alt="" /></PIC>
+    <MAIN>
+      <CLR>
+
+    
+    <PIC><PIC2  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7l0ql6GGGCSffB_IxNBIHj7jDqUM1e0YDoQ&s" alt="" /></PIC>
       <DIV>
-      <input type=" text" placeholder='name' onChange={(e)=>setname(e.target.value)}/>
-      <input type=" email" placeholder='email' onChange={(e)=>setemail(e.target.value)}/>
-      <input type="password" placeholder='password' onChange={(e)=>setpassword(e.target.value)}/>
-      <input type="number" placeholder='age' onChange={(e)=>setage(e.target.value)}/>
-      <input type="number" placeholder='mobile' onChange={(e)=>setmobile(e.target.value)}/>
-      <input type="number" placeholder='pincode' onChange={(e)=>setpincode(e.target.value)}/>
-       <button onClick={signup} style={{backgroundColor:'lightblue'}}>signup</button>
+        <NAME>
+        <input type=" text" placeholder='name' onChange={(e)=>setname(e.target.value)}/>
+
+
+        </NAME>
+        <EMAIL>
+        <input type=" email" placeholder='email' onChange={(e)=>setemail(e.target.value)}/>
+
+
+        </EMAIL>
+        <PSWD>
+        <input type="password" placeholder='password' onChange={(e)=>setpassword(e.target.value)}/>
+
+
+        </PSWD>
+        <AGE>
+        <input type="number" placeholder='age' onChange={(e)=>setage(e.target.value)}/>
+
+
+        </AGE>
+        <MOBILE>
+        <input type="number" placeholder='mobile' onChange={(e)=>setmobile(e.target.value)}/>
+
+
+        </MOBILE>
+        <PINCODE>
+        <input type="number" placeholder='pincode' onChange={(e)=>setpincode(e.target.value)}/>
+
+
+        </PINCODE>
+        <SIGN>
+        <button onClick={signup} style={{backgroundColor:'lightblue'}}>signup</button>
+
+
+        </SIGN>
+        <UPDT>
+        <Link to={'/'}><button style={{backgroundColor:'lightblue'}}> login page</button> </Link>
+
+
+        </UPDT>
    
-<Link to={'/'}><button style={{backgroundColor:'lightblue'}}> login page</button> </Link>
 </DIV>
 
+</CLR>
  
-    </div>
+    </MAIN>
   )
 }
 

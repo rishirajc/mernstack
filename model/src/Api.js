@@ -42,7 +42,7 @@ import { addtoLogindata, removedata } from "./assets/redux/Loginslice";
  export const DeleteDatas=async(id,dispatch)=>{
     try {
         const clear=await axios.delete(`http://localhost:7000/moon/delete/${id}`)
-        console.log(clear.data);
+        console.log(clear.data.message);
         clear.data? dispatch(removedata()):null
         
     } catch (error) {
